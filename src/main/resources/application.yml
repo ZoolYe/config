@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/ZoolYe/config-repo.git
+          username: username
+          password: password
+          basedir: D:\ZOOL\IDEA\SpringCloudConfig
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+server:
+  port: 8082
